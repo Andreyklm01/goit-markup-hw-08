@@ -1,0 +1,31 @@
+.clients {
+  padding: 94px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $social-links-color;
+    border-radius: 4px;
+    fill: $social-links-color;
+
+    transition: border-color 250ms $cubic-bezier, fill 250ms $cubic-bezier;
+
+    svg {
+      width: 89px;
+      height: 52px;
+    }
+    &:hover,
+    &:focus {
+      border-color: $accent-color-main;
+      fill: $accent-color-main;
+    }
+  }
+}

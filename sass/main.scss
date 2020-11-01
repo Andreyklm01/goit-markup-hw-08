@@ -1,0 +1,28 @@
+// ===MAIN PAGE===
+// UTILS
+
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// BASE
+@import "./base/modern-normalize";
+@import "./base/common";
+@import "./base/container";
+
+// COMPONENTS
+@import "./components/section-title";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/current-page";
+@import "./components/social-links";
+@import "./components/modal";
+@import "./components/modal-form";
+
+// LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features-section";
+@import "./layout/activity-section";
+@import "./layout/team-section";
+@import "./layout/clients-section";
+@import "./layout/footer";
