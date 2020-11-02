@@ -886,6 +886,12 @@ img {
   background-image: url(../images/features/astronaut.svg);
 }
 
+@media screen and (max-width: 1199px) {
+  .activity-section {
+    display: none;
+  }
+}
+
 .activity-section {
   padding-bottom: 94px;
 }
