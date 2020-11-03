@@ -2,9 +2,14 @@
   // team
   &__list {
     display: flex;
-    justify-content: space-between;
-    padding: 0 32px;
+    justify-content: center;
+    padding: 0 auto;
     margin-top: 16px;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+      padding: 0 32px;
+    }
 
     svg {
       width: 20px;
@@ -29,6 +34,11 @@
     &:focus {
       fill: $additional-color;
       background-color: $accent-color-main;
+    }
+  }
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-right: 10px;
     }
   }
 

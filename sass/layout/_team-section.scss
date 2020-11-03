@@ -1,24 +1,61 @@
+// На 767 пикселе не применяется margin 30px!!!
+
 .team {
   &-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     text-align: center;
 
     background-color: $background-secondary-color;
-  }
-  &-card {
-    display: flex;
-    &-item {
-      width: 270px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-      background: $additional-color;
-      padding-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
-    &-item:not(:last-child) {
-      margin-right: 30px;
+  }
+
+  &-card {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &-card-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background: $additional-color;
+    padding-bottom: 24px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  &-card-photo {
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
     }
   }
   &-employee {

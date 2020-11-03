@@ -112,35 +112,31 @@
           <ul class="activity-list">
             <li class="activity-item">
               <div class="activity-img">
-                <img
-                  class="activity-img"
+                <img 
+                  alt="разработчик пишет код на клавиатуре" 
                   src="./images/work-on-keyboard.jpg"
-                  alt="разработчик пишет код на клавиатуре"
-                  width="370"
-                  height="294"
-                />
+                  srcset="./images/work-on-keyboard@2x.jpg 2x" 
+                  width="370" height="294" />
                 <p class="activity-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="activity-item">
               <div class="activity-img">
-                <img
-                  src="./images/laptop-work.jpg"
-                  alt="девушка подбирает варианты дизайна сайта на ноутбуке"
-                  width="370"
-                  height="294"
-                />
+                <img 
+                alt="девушка подбирает варианты дизайна сайта на ноутбуке" 
+                src="./images/laptop-work.jpg" 
+                srcset="./images/laptop-work@2x.jpg 2x" 
+                width="370" height="294" />
                 <p class="activity-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="activity-item">
               <div class="activity-img">
-                <img
-                  src="./images/tablet-work.jpg"
-                  alt="человек выбирает цвет из палитры на планшете"
-                  width="370"
-                  height="294"
-                />
+                <img 
+                alt="человек выбирает цвет из палитры на планшете" 
+                src="./images/tablet-work.jpg"
+                srcset="./images/tablet-work@2x.jpg 2x" 
+                width="370" height="294" />
                 <p class="activity-text">Дизайнерские решения</p>
               </div>
             </li>
@@ -149,17 +145,17 @@
       </section>
 
       <!-- Our team -->
-      <!-- <section class="team-section">
+      <section class="team-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-card">
             <li class="team-card-item">
-              <img
-                src="./images/img.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture >
+                <source src="./images/team/img-desktop.jpg 1x, ./images/team/img-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source src="./images/team/img-tablet.jpg 1x, ./images/team/img-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source src="./images/team/img-mobile.jpg 1x, ./images/team/img-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                <img src="./images/team/img-mobile.jpg" alt="Фото Игоря Демьяненко" class="team-card-photo">
+              </picture>
               <h3 class="team-employee name">Игорь Демьяненко</h3>
               <p class="team-employee" lang="en">Product Designer</p>
               <ul class="social-links__list">
@@ -195,12 +191,12 @@
             </li>
 
             <li class="team-card-item">
-              <img
-                src="./images/img-1.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source src="./images/team/img-1-desktop.jpg 1x, ./images/team/img-1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source src="./images/team/img-1-tablet.jpg 1x, ./images/team/img-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source src="./images/team/img-1-mobile.jpg 1x, ./images/team/img-1-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                <img src="./images/team/img-1-mobile.jpg" alt="Фото Ольги Репиной" class="team-card-photo">
+              </picture>
               <h3 class="team-employee name">Ольга Репина</h3>
               <p class="team-employee" lang="en">Frontend Developer</p>
               <ul class="social-links__list">
@@ -236,12 +232,12 @@
             </li>
 
             <li class="team-card-item">
-              <img
-                src="./images/img-2.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source src="./images/team/img-2-desktop.jpg 1x, ./images/team/img-2-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source src="./images/team/img-2-tablet.jpg 1x, ./images/team/img-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source src="./images/team/img-2-mobile.jpg 1x, ./images/team/img-2-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                <img src="./images/team/img-2-mobile.jpg" alt="Фото Николая Тарасова" class="team-card-photo">
+              </picture>
               <h3 class="team-employee name">Николай Тарасов</h3>
               <p class="team-employee" lang="en">Marketing</p>
               <ul class="social-links__list">
@@ -276,12 +272,12 @@
               </ul>
             </li>
             <li class="team-card-item">
-              <img
-                src="./images/img-3.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source src="./images/team/img-3-desktop.jpg 1x, ./images/team/img-3-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                <source src="./images/team/img-3-tablet.jpg 1x, ./images/team/img-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                <source src="./images/team/img-3-mobile.jpg 1x, ./images/team/img-3-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                <img src="./images/team/img-3-mobile.jpg" alt="Фото Михаила Ермакова" class="team-card-photo">
+              </picture>
               <h3 class="team-employee name">Михаил Ермаков</h3>
               <p class="team-employee" lang="en">UI Designer</p>
 
@@ -318,7 +314,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="clients">
         <div class="container">
