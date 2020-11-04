@@ -501,7 +501,7 @@ img {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .social-links__footer {
     margin-top: 60px;
   }
