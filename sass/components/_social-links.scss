@@ -57,7 +57,7 @@
   }
   &__list_footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 20px;
     padding: 0 auto;
 
@@ -87,5 +87,11 @@
   }
   &__item_margin:not(:last-child) {
     margin-right: 10px;
+  }
+}
+
+.social-links__footer {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
   }
 }
