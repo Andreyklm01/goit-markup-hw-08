@@ -1,72 +1,282 @@
+// СДЕЛАТЬ АНИМАЦИЮ НА КНОПКУ МЕНЮ!!!
+
 .header {
-  border-bottom: 1px solid $border-color;
   background-color: $additional-color;
 
-  &-icon {
-    width: 17px;
-    height: 16px;
-
-    margin-right: 10px;
+  @media screen and (max-width: 767px) {
+    position: relative;
   }
-  &-contacts-item {
+
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__menu-container {
+    @media screen and (max-width: 767px) {
+      opacity: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $additional-color;
+      border-top: 1px solid $border-color;
+
+      transition: opacity 250ms $cubic-bezier 100ms;
+      &.is-open {
+        opacity: 1;
+
+        transition: opacity 250ms $cubic-bezier 100ms;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+}
+
+.header__menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: transparent;
+
+  &__menu-btn--open,
+  &__menu-btn--close {
+    fill: $secondary-text-color;
+  }
+
+  & .header__menu-btn--close {
+    opacity: 0;
+  }
+
+  &.is-open .header__menu-btn--close {
+    opacity: 1;
+  }
+  &.is-open .header__menu-btn--open {
+    opacity: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: $additional-color;
+
+  @media screen and (max-width: 767px) {
+  }
+}
+
+.menu {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+
+    color: $secondary-text-color;
+
     transition: fill 250ms $cubic-bezier, color 250ms $cubic-bezier;
     &:hover,
     &:focus {
       color: $accent-color-main;
       fill: $accent-color-main;
     }
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-}
-
-.navigation-contacts {
-  display: flex;
-}
-
-.navbar {
-  &-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-  }
-  &-item {
-    position: relative;
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-  &-link {
-    display: block;
-    position: relative;
-    color: $secondary-text-color;
-
-    padding: 29px 0;
-
-    transition: color 250ms $cubic-bezier;
-    &:hover,
-    &:focus {
-      color: $accent-color-main;
-    }
   }
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  fill: currentColor;
-  padding: 20px 0;
+  display: block;
+  text-align: center;
 
-  transition: color 250ms $cubic-bezier;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
 
-  &:hover,
-  &:focus {
-    color: $accent-color-main;
+  &__item {
+    fill: $main-text-color;
+
+    transition: fill 250ms $cubic-bezier, color 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+      color: $accent-color-main;
+      fill: $accent-color-main;
+    }
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+  &__icon {
+    width: 16px;
+    height: 15px;
+    margin-right: 10px;
+
+    @media screen and (min-width: 768px) {
+      width: 14px;
+      height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 17px;
+      height: 16px;
+    }
   }
 }
+
+.menu-contacts {
+  font-size: 18px;
+  line-height: 1.16;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+// .header {
+
+//   @media screen and (min-width: 768px) {
+//     border-bottom: 1px solid $border-color;
+//     display: flex;
+//   }
+
+//   &-contacts-item {
+//     transition: fill 250ms $cubic-bezier, color 250ms $cubic-bezier;
+//     &:hover,
+//     &:focus {
+//       color: $accent-color-main;
+//       fill: $accent-color-main;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//       &:not(:last-child) {
+//         margin-right: 50px;
+//       }
+//     }
+//   }
+// }
+
+// .navigation-contacts {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//   }
+// }
+
+// .navbar {
+//   &-list {
+//     font-size: 18px;
+//     line-height: 1.16;
+//     font-weight: 500;
+//     letter-spacing: 0.02em;
+
+//     @media screen and (min-width: 768px) {
+//       display: flex;
+//       align-items: center;
+//       margin-left: auto;
+
+//       font-size: 14px;
+//       line-height: 1.14;
+//     }
+//   }
+//   &-item {
+//     position: relative;
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
+//   &-link {
+//     display: block;
+//     position: relative;
+//     color: $secondary-text-color;
+
+//     padding: 29px 0;
+
+//     transition: color 250ms $cubic-bezier;
+//     &:hover,
+//     &:focus {
+//       color: $accent-color-main;
+//     }
+//   }
+// }
+
+// .contacts {
+//   display: flex;
+//   align-items: center;
+//   fill: currentColor;
+
+//   transition: color 250ms $cubic-bezier;
+
+//   &:hover,
+//   &:focus {
+//     color: $accent-color-main;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     padding: 20px 0;
+//   }
+
+//   &-list {
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//       display: block;
+//       text-align: start;
+//     }
+//   }
+//   &--mail {
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//       padding-top: 21px;
+//       margin-bottom: 10px;
+//     }
+//   }
+
+//   &--tel {
+//     @media screen and (min-width: 768px) and (max-width: 1199px) {
+//       padding-bottom: 21px;
+//     }
+//   }
+// }

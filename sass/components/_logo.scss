@@ -8,20 +8,19 @@
     color: #000;
     letter-spacing: 0.03em;
 
+    padding: 16px 0;
+    display: inline-block;
+
+    &--style {
+      color: $accent-color-main;
+    }
+
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       line-height: 1.2;
     }
-
-    &-position {
-      margin-right: 93px;
-      padding-top: 24px;
-      padding-bottom: 25px;
-    }
-    &-style {
-      color: $accent-color-main;
-    }
   }
+
   //   footer
   &-title.logo-footer {
     color: $additional-color;

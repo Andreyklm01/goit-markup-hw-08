@@ -12,48 +12,54 @@
 </head>
 
 <body>
-  <!-- <header class="header">
-      <div class="container navigation-contacts">
-      <nav>
-        <ul class="navbar-list">
-          <li lang="en" class="logo-title-position">
-            <a href="./index.html" class="logo-title"
-              ><span class="logo-title-style">Web</span>Studio</a
-            >
-          </li>
-          <li class="navbar-item">
-            <a href="./index.html" class="navbar-link current-page">Студия</a>
-          </li>
-          <li class="navbar-item">
-            <a href="./portfolio.html" target="_self" class="navbar-link"
-              >Портфолио</a
-            >
-          </li>
-          <li class="navbar-item">
-            <a href="" class="navbar-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="navbar-list">
-        <li class="header-contacts-item">
-          <a href="mailto:info@devstudio.com" class="contacts">
-            <svg class="header-icon">
-              <use href="./images/sprite.svg#envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-item">
-          <a href="tel:+380961111111" class="contacts">
-            <svg class="header-icon">
-              <use href="./images/sprite.svg#smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-      </div>
-    </header> -->
+  <header class="header">
+      <div class="container">
+          <nav class="nav">
+            <a href="./index.html" class="logo-title"><span class="logo-title--style">Web</span>Studio</a>
+            <button type="button" class="header__menu-btn" data-menu-button aria-expanded="false">
+              <svg class="header__menu-btn--svg" 
+                   width="25" 
+                   height="25" 
+                   aria-label="переключатель мобильного меню">
+                <use href="./images/sprite.svg#menu-btn-header" class="header__menu-btn--open"></use>
+                <use href="./images/sprite.svg#close-btn-header" class="header__menu-btn--close"></use>
+              </svg>
+           </button>
+
+            <div class="header__menu-container" data-menu>
+              <ul class="menu menu-contacts">
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link current-page">Студия</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./portfolio.html" target="_self" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+        
+          
+              <ul class="contacts menu-contacts">
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__link">
+                    <svg class="contacts__icon">
+                      <use href="./images/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__link">
+                    <svg class="contacts__icon">
+                      <use href="./images/sprite.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
 
   <main class="main">
     <!-- HERO -->
@@ -137,11 +143,11 @@
         <ul class="team-card">
           <li class="team-card-item">
             <picture>
-              <source src="./images/team/img-desktop.jpg 1x, ./images/team/img-desktop@2x.jpg 2x"
+              <source srcset="./images/team/img-desktop.jpg 1x, ./images/team/img-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)">
-              <source src="./images/team/img-tablet.jpg 1x, ./images/team/img-tablet@2x.jpg 2x"
+              <source srcset="./images/team/img-tablet.jpg 1x, ./images/team/img-tablet@2x.jpg 2x"
                 media="(min-width: 768px)">
-              <source src="./images/team/img-mobile.jpg 1x, ./images/team/img-mobile@2x.jpg 2x"
+              <source srcset="./images/team/img-mobile.jpg 1x, ./images/team/img-mobile@2x.jpg 2x"
                 media="(min-width: 320px)">
               <img src="./images/team/img-mobile.jpg" alt="Фото Игоря Демьяненко" class="team-card-photo">
             </picture>
@@ -181,11 +187,11 @@
 
           <li class="team-card-item">
             <picture>
-              <source src="./images/team/img-1-desktop.jpg 1x, ./images/team/img-1-desktop@2x.jpg 2x"
+              <source srcset="./images/team/img-1-desktop.jpg 1x, ./images/team/img-1-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)">
-              <source src="./images/team/img-1-tablet.jpg 1x, ./images/team/img-1-tablet@2x.jpg 2x"
+              <source srcset="./images/team/img-1-tablet.jpg 1x, ./images/team/img-1-tablet@2x.jpg 2x"
                 media="(min-width: 768px)">
-              <source src="./images/team/img-1-mobile.jpg 1x, ./images/team/img-1-mobile@2x.jpg 2x"
+              <source srcset="./images/team/img-1-mobile.jpg 1x, ./images/team/img-1-mobile@2x.jpg 2x"
                 media="(min-width: 320px)">
               <img src="./images/team/img-1-mobile.jpg" alt="Фото Ольги Репиной" class="team-card-photo">
             </picture>
@@ -225,11 +231,11 @@
 
           <li class="team-card-item">
             <picture>
-              <source src="./images/team/img-2-desktop.jpg 1x, ./images/team/img-2-desktop@2x.jpg 2x"
+              <source srcset="./images/team/img-2-desktop.jpg 1x, ./images/team/img-2-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)">
-              <source src="./images/team/img-2-tablet.jpg 1x, ./images/team/img-2-tablet@2x.jpg 2x"
+              <source srcset="./images/team/img-2-tablet.jpg 1x, ./images/team/img-2-tablet@2x.jpg 2x"
                 media="(min-width: 768px)">
-              <source src="./images/team/img-2-mobile.jpg 1x, ./images/team/img-2-mobile@2x.jpg 2x"
+              <source srcset="./images/team/img-2-mobile.jpg 1x, ./images/team/img-2-mobile@2x.jpg 2x"
                 media="(min-width: 320px)">
               <img src="./images/team/img-2-mobile.jpg" alt="Фото Николая Тарасова" class="team-card-photo">
             </picture>
@@ -268,11 +274,11 @@
           </li>
           <li class="team-card-item">
             <picture>
-              <source src="./images/team/img-3-desktop.jpg 1x, ./images/team/img-3-desktop@2x.jpg 2x"
+              <source srcset="./images/team/img-3-desktop.jpg 1x, ./images/team/img-3-desktop@2x.jpg 2x"
                 media="(min-width: 1200px)">
-              <source src="./images/team/img-3-tablet.jpg 1x, ./images/team/img-3-tablet@2x.jpg 2x"
+              <source srcset="./images/team/img-3-tablet.jpg 1x, ./images/team/img-3-tablet@2x.jpg 2x"
                 media="(min-width: 768px)">
-              <source src="./images/team/img-3-mobile.jpg 1x, ./images/team/img-3-mobile@2x.jpg 2x"
+              <source srcset="./images/team/img-3-mobile.jpg 1x, ./images/team/img-3-mobile@2x.jpg 2x"
                 media="(min-width: 320px)">
               <img src="./images/team/img-3-mobile.jpg" alt="Фото Михаила Ермакова" class="team-card-photo">
             </picture>
@@ -370,7 +376,7 @@
       
         <div class="address-container">
           <h2 lang="en" class="logo-footer-margin">
-            <a href="./index.html" class="logo-title logo-footer"><span class="logo-title-style">Web</span>Studio</a>
+            <a href="./index.html" class="logo-title logo-footer"><span class="logo-title--style">Web</span>Studio</a>
           </h2>
           <address class="address-footer">
             <ul class="address-list">
@@ -504,6 +510,8 @@
     </div> -->
 
   <script src="./js/modal.js">
+  </script>
+  <script src="./js/menu.js">
   </script>
 </body>
 
