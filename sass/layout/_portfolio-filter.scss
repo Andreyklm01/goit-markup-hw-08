@@ -1,12 +1,28 @@
 .portfolio {
-  padding: 94px 0px;
+  padding: 60px 0px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 
 .filter {
   &-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
   }
   &-item {
     &:not(:last-child) {
@@ -14,6 +30,7 @@
     }
   }
   &-btn {
+    display: block;
     padding: 6px 22px;
     background: $background-secondary-color;
     border-radius: 4px;
@@ -32,6 +49,12 @@
     &:focus {
       background-color: $accent-color-main;
       color: $additional-color;
+    }
+
+    @media screen and (max-width: 767px) {
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 15px;
+      }
     }
   }
 }
