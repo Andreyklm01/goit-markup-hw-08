@@ -380,6 +380,7 @@ img {
 
 .logo-title.logo-footer {
   color: #fff;
+  padding: 0;
 }
 
 .logo-footer-margin {
@@ -1303,14 +1304,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    display: flex;
     justify-content: flex-start;
-    align-items: baseline;
   }
 }
 
