@@ -717,6 +717,7 @@ img {
   }
   .header__menu-container.is-open {
     display: block;
+    opacity: 1;
   }
 }
 
