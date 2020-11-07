@@ -1,5 +1,3 @@
-// На 767 пикселе не применяется margin 30px!!!
-
 .team {
   &-section {
     padding: 60px 0;
@@ -26,7 +24,7 @@
     background: $additional-color;
     padding-bottom: 24px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
 
