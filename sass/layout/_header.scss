@@ -1,14 +1,11 @@
 .header {
   background-color: $additional-color;
+  border-bottom: 1px solid $border-color;
 
   @media screen and (max-width: 767px) {
     position: fixed;
     width: 100%;
-    z-index: 999;
-  }
-
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid $border-color;
+    z-index: 99;
   }
 
   &__menu-container {
