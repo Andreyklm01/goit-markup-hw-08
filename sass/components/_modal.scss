@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   z-index: 999;
 
   top: 0;
@@ -32,12 +33,17 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
 
+  // Для скрола модалки на альбомном режиме
+  @media screen and (min-height: 100px) and (max-height: 450px) {
+    top: 100%;
+  }
+
+  // Для вьюпорта до 479px
   @media screen and (max-width: 479px) {
     width: 95%;
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
-    // height: 581px;
   }
 
   .backdrop.is-hidden & {

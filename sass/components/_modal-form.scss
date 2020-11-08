@@ -6,6 +6,11 @@
   letter-spacing: 0.01em;
   color: $main-text-color;
 
+  // Для вьюпорта до 479px
+  @media screen and (max-width: 479px) {
+    padding: 20px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 20px;
@@ -15,6 +20,12 @@
     color: $secondary-text-color;
 
     margin-bottom: 12px;
+
+    // Для вьюпорта до 479px
+    @media screen and (max-width: 479px) {
+      font-size: 18px;
+      padding: 0 20px;
+    }
   }
   &__label {
     position: relative;
@@ -82,6 +93,12 @@
     font-size: 12px;
     letter-spacing: 0.03em;
 
+    // Для вьюпорта до 479px
+    @media screen and (max-width: 479px) {
+      font-size: 8.5px;
+      letter-spacing: 0.01em;
+    }
+
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.71;
@@ -101,6 +118,12 @@
       border-radius: 2px;
 
       transition: all 250ms $cubic-bezier;
+
+      // Для вьюпорта до 479px
+      @media screen and (max-width: 479px) {
+        width: 12px;
+        height: 12px;
+      }
       // !!Галочка чекбокса!!
       .order-form__checkbox:checked + & {
         background-color: $accent-color-main;

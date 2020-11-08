@@ -452,64 +452,62 @@
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
-      <div class="modal__container">
-        <div class="modal">
-          <button type="button" class="close-btn" data-modal-close>
-            <svg class="close-btn-icon">
-              <use href="./images/sprite.svg#close-btn"></use>
-            </svg>
-          </button>
-        
-          <form class="order-form">
-            <div role="group">
-              <h2 class="order-form__title">Оставьте свои данные, мы вам перезвоним</h2>
-        
-              <label class="order-form__label">
-                Имя
-                <input type="text" name="client-name" class="order-form__field" placeholder=" " required autocomplete="off">
-                <svg class="order-form__image">
-                  <use href="./images/sprite.svg#person-icon"></use>
-                </svg>
-        
-              </label>
-        
-              <label class="order-form__label">
-                Телефон
-                <input type="tel" name="client-tel" class="order-form__field" required autocomplete="off">
-                <svg class="order-form__image">
-                  <use href="./images/sprite.svg#phone-icon"></use>
-                </svg>
-        
-              </label>
-        
-              <label class="order-form__label">
-                Почта
-                <input type="email" name="client-email" class="order-form__field" required autocomplete="off">
-                <svg class="order-form__image">
-                  <use href="./images/sprite.svg#email-icon"></use>
-                </svg>
-        
-              </label>
-        
-              <label class="order-form__label order-form__label--margin">
-                Комментарий
-                <textarea name="client-comment" class="order-form__field order-form__textarea" placeholder="Введите текст"
-                  autocomplete="off"></textarea>
-              </label>
-        
-              <input type="checkbox" id="check-policy" name="policy" class="order-form__checkbox visually-hidden"
-                value="accept-policy" checked>
-              <label for="check-policy" class="order-form__policy">
-                Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="order-form__link">Условия
-                  договора</a>
-              </label>
-        
-              <button type="submit" class="button order-form__button--centered">Отправить</button>
-        
-            </div>
-        
-          </form>
-        </div>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-icon">
+            <use href="./images/sprite.svg#close-btn"></use>
+          </svg>
+        </button>
+      
+        <form class="order-form">
+          <div role="group">
+            <h2 class="order-form__title">Оставьте свои данные, мы вам перезвоним</h2>
+      
+            <label class="order-form__label">
+              Имя
+              <input type="text" name="client-name" class="order-form__field" placeholder=" " required autocomplete="off">
+              <svg class="order-form__image">
+                <use href="./images/sprite.svg#person-icon"></use>
+              </svg>
+      
+            </label>
+      
+            <label class="order-form__label">
+              Телефон
+              <input type="tel" name="client-tel" class="order-form__field" required autocomplete="off">
+              <svg class="order-form__image">
+                <use href="./images/sprite.svg#phone-icon"></use>
+              </svg>
+      
+            </label>
+      
+            <label class="order-form__label">
+              Почта
+              <input type="email" name="client-email" class="order-form__field" required autocomplete="off">
+              <svg class="order-form__image">
+                <use href="./images/sprite.svg#email-icon"></use>
+              </svg>
+      
+            </label>
+      
+            <label class="order-form__label order-form__label--margin">
+              Комментарий
+              <textarea name="client-comment" class="order-form__field order-form__textarea" placeholder="Введите текст"
+                autocomplete="off"></textarea>
+            </label>
+      
+            <input type="checkbox" id="check-policy" name="policy" class="order-form__checkbox visually-hidden"
+              value="accept-policy" checked>
+            <label for="check-policy" class="order-form__policy">
+              Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#" class="order-form__link">Условия
+                договора</a>
+            </label>
+      
+            <button type="submit" class="button order-form__button--centered">Отправить</button>
+      
+          </div>
+      
+        </form>
       </div>
     </div>
 
